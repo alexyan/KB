@@ -12,7 +12,8 @@
         "url": "git://github.com/alexyan/KB.git"
     },
     "dependencies": {
-        "commander": "*"
+        "commander": "*",
+        "cli-prompt": "*"
     },
     "author": "5918760@gmail.com",
     "license": "ISC",

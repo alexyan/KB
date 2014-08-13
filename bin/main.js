@@ -22,6 +22,13 @@ commander
         Keyboard.off();
     });
 
+commander
+    .command('setup')
+    .description("setup")
+    .action(function(){
+        Keyboard.setup();
+    });
+
 commander.parse(process.argv);
 var args = process.argv.slice(3);
 var subcmd = commander.args[0];
