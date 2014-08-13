@@ -2,10 +2,12 @@
  
 # Disable BT on local machine and enable it on remote machine, so KB/Mouse reconnect to remote machine.
 
-$host=$1
+
+user=$1
+host=$2
 
 #ensure local bluetooth is off
 blueutil off
  
 #enable imac bluetooth
-ssh $host '/usr/local/bin/blueutil on'
+ssh $user@$host '/usr/local/bin/blueutil on'
